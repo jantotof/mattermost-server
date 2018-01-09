@@ -679,7 +679,7 @@ func (a *App) postRemoveFromTeamMessage(user *model.User, channel *model.Channel
 		Type:      model.POST_REMOVE_FROM_TEAM,
 		UserId:    user.Id,
 		Props: model.StringInterface{
-			"removedUsername": user.Username,
+			"username": user.Username,
 		},
 	}
 
